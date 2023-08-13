@@ -1,0 +1,92 @@
+html{margin: 0px;
+    box-sizing: border-box;
+    font-size: 100%;}
+*,*::after,*::before{box-sizing: inherit;}
+body{
+    scroll: none;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+main{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-52%);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:21.875rem;
+}
+.topimg{
+    position: relative;
+    top:4.625rem;
+    width:15rem;
+    aspect-ratio: 98001 / 74308;
+    background-image: url('images/illustration-woman-online-mobile.svg');
+    background-repeat: no-repeat;
+}
+.whitepaper{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width:21.875rem;
+}
+.imgshadow{
+    background-repeat: no-repeat;
+    width:15rem;
+    height: 6.5rem;
+    background-image: url('images/bg-pattern-mobile.svg');
+}
+.whitepaper h1{
+    color: hsl(237, 12%, 33%);
+    margin: 1.875rem 0px 0.937rem 0px;
+}
+.questionscont{
+    padding: 0px 0px 1.875rem 0px;
+}
+.question{
+    margin:0px 1.25rem 0px 1.25rem;
+    padding:0.625rem 0px 0.625rem 0px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.question h3{
+    font-size: 0.8rem;
+    align-items: center;
+    text-align: left;
+    width:19.375rem;
+    color:  hsl(237, 12%, 33%);
+    display: flex;
+    justify-content: space-between;
+    margin: 0.625rem 0px 0.625rem 0px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+h3:hover{
+    color:hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+.para{
+    display: none;
+    color:  hsl(240, 6%, 50%);
+    font-size: 0.7rem;
+    margin: 0px;
+    height:0px;
+    transition: 0.3s;
+    animation: dropdown 1s ease-in-out;
+}
+.display{
+    display:block;
+    height:fit-content;
+}
+.svgrot{
+    rotate: 180deg;
+}
+.question .bold{
+    font-weight: 700;
+}
